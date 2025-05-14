@@ -29,8 +29,1384 @@
 </head>
 <body>
     <div id="webcrumbs">
-        <!-- Todo o conteúdo HTML original permanece aqui -->
-        <!-- [Todo o HTML original foi mantido com os mesmos data-ids] -->
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Webcrumbs Plugin</title>
+        <style>
+            @import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
+            @import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+            @import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200);
+            @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+
+            /*! tailwindcss v3.4.11 | MIT License | https://tailwindcss.com*/
+            *,
+            :after,
+            :before {
+                border: 0 solid #e5e7eb;
+                box-sizing: border-box;
+            }
+            :after,
+            :before {
+                --tw-content: "";
+            }
+            :host,
+            html {
+                line-height: 1.5;
+                -webkit-text-size-adjust: 100%;
+                font-family:
+                    Open Sans,
+                    ui-sans-serif,
+                    system-ui,
+                    sans-serif,
+                    Apple Color Emoji,
+                    Segoe UI Emoji,
+                    Segoe UI Symbol,
+                    Noto Color Emoji;
+                font-feature-settings: normal;
+                font-variation-settings: normal;
+                -moz-tab-size: 4;
+                tab-size: 4;
+                -webkit-tap-highlight-color: transparent;
+            }
+            body {
+                line-height: inherit;
+                margin: 0;
+            }
+            hr {
+                border-top-width: 1px;
+                color: inherit;
+                height: 0;
+            }
+            abbr:where([title]) {
+                text-decoration: underline dotted;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: inherit;
+                font-weight: inherit;
+            }
+            a {
+                color: inherit;
+                text-decoration: inherit;
+            }
+            b,
+            strong {
+                font-weight: bolder;
+            }
+            code,
+            kbd,
+            pre,
+            samp {
+                font-family:
+                    ui-monospace,
+                    SFMono-Regular,
+                    Menlo,
+                    Monaco,
+                    Consolas,
+                    Liberation Mono,
+                    Courier New,
+                    monospace;
+                font-feature-settings: normal;
+                font-size: 1em;
+                font-variation-settings: normal;
+            }
+            small {
+                font-size: 80%;
+            }
+            sub,
+            sup {
+                font-size: 75%;
+                line-height: 0;
+                position: relative;
+                vertical-align: baseline;
+            }
+            sub {
+                bottom: -0.25em;
+            }
+            sup {
+                top: -0.5em;
+            }
+            table {
+                border-collapse: collapse;
+                border-color: inherit;
+                text-indent: 0;
+            }
+            button,
+            input,
+            optgroup,
+            select,
+            textarea {
+                color: inherit;
+                font-family: inherit;
+                font-feature-settings: inherit;
+                font-size: 100%;
+                font-variation-settings: inherit;
+                font-weight: inherit;
+                letter-spacing: inherit;
+                line-height: inherit;
+                margin: 0;
+                padding: 0;
+            }
+            button,
+            select {
+                text-transform: none;
+            }
+            button,
+            input:where([type="button"]),
+            input:where([type="reset"]),
+            input:where([type="submit"]) {
+                -webkit-appearance: button;
+                background-color: transparent;
+                background-image: none;
+            }
+            :-moz-focusring {
+                outline: auto;
+            }
+            :-moz-ui-invalid {
+                box-shadow: none;
+            }
+            progress {
+                vertical-align: baseline;
+            }
+            ::-webkit-inner-spin-button,
+            ::-webkit-outer-spin-button {
+                height: auto;
+            }
+            [type="search"] {
+                -webkit-appearance: textfield;
+                outline-offset: -2px;
+            }
+            ::-webkit-search-decoration {
+                -webkit-appearance: none;
+            }
+            ::-webkit-file-upload-button {
+                -webkit-appearance: button;
+                font: inherit;
+            }
+            summary {
+                display: list-item;
+            }
+            blockquote,
+            dd,
+            dl,
+            figure,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            hr,
+            p,
+            pre {
+                margin: 0;
+            }
+            fieldset {
+                margin: 0;
+            }
+            fieldset,
+            legend {
+                padding: 0;
+            }
+            menu,
+            ol,
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            dialog {
+                padding: 0;
+            }
+            textarea {
+                resize: vertical;
+            }
+            input::placeholder,
+            textarea::placeholder {
+                color: #9ca3af;
+                opacity: 1;
+            }
+            [role="button"],
+            button {
+                cursor: pointer;
+            }
+            :disabled {
+                cursor: default;
+            }
+            audio,
+            canvas,
+            embed,
+            iframe,
+            img,
+            object,
+            svg,
+            video {
+                display: block;
+                vertical-align: middle;
+            }
+            img,
+            video {
+                height: auto;
+                max-width: 100%;
+            }
+            [hidden] {
+                display: none;
+            }
+            *,
+            :after,
+            :before {
+                --tw-border-spacing-x: 0;
+                --tw-border-spacing-y: 0;
+                --tw-translate-x: 0;
+                --tw-translate-y: 0;
+                --tw-rotate: 0;
+                --tw-skew-x: 0;
+                --tw-skew-y: 0;
+                --tw-scale-x: 1;
+                --tw-scale-y: 1;
+                --tw-pan-x: ;
+                --tw-pan-y: ;
+                --tw-pinch-zoom: ;
+                --tw-scroll-snap-strictness: proximity;
+                --tw-gradient-from-position: ;
+                --tw-gradient-via-position: ;
+                --tw-gradient-to-position: ;
+                --tw-ordinal: ;
+                --tw-slashed-zero: ;
+                --tw-numeric-figure: ;
+                --tw-numeric-spacing: ;
+                --tw-numeric-fraction: ;
+                --tw-ring-inset: ;
+                --tw-ring-offset-width: 0px;
+                --tw-ring-offset-color: #fff;
+                --tw-ring-color: rgba(59, 130, 246, 0.5);
+                --tw-ring-offset-shadow: 0 0 #0000;
+                --tw-ring-shadow: 0 0 #0000;
+                --tw-shadow: 0 0 #0000;
+                --tw-shadow-colored: 0 0 #0000;
+                --tw-blur: ;
+                --tw-brightness: ;
+                --tw-contrast: ;
+                --tw-grayscale: ;
+                --tw-hue-rotate: ;
+                --tw-invert: ;
+                --tw-saturate: ;
+                --tw-sepia: ;
+                --tw-drop-shadow: ;
+                --tw-backdrop-blur: ;
+                --tw-backdrop-brightness: ;
+                --tw-backdrop-contrast: ;
+                --tw-backdrop-grayscale: ;
+                --tw-backdrop-hue-rotate: ;
+                --tw-backdrop-invert: ;
+                --tw-backdrop-opacity: ;
+                --tw-backdrop-saturate: ;
+                --tw-backdrop-sepia: ;
+                --tw-contain-size: ;
+                --tw-contain-layout: ;
+                --tw-contain-paint: ;
+                --tw-contain-style: ;
+            }
+            ::backdrop {
+                --tw-border-spacing-x: 0;
+                --tw-border-spacing-y: 0;
+                --tw-translate-x: 0;
+                --tw-translate-y: 0;
+                --tw-rotate: 0;
+                --tw-skew-x: 0;
+                --tw-skew-y: 0;
+                --tw-scale-x: 1;
+                --tw-scale-y: 1;
+                --tw-pan-x: ;
+                --tw-pan-y: ;
+                --tw-pinch-zoom: ;
+                --tw-scroll-snap-strictness: proximity;
+                --tw-gradient-from-position: ;
+                --tw-gradient-via-position: ;
+                --tw-gradient-to-position: ;
+                --tw-ordinal: ;
+                --tw-slashed-zero: ;
+                --tw-numeric-figure: ;
+                --tw-numeric-spacing: ;
+                --tw-numeric-fraction: ;
+                --tw-ring-inset: ;
+                --tw-ring-offset-width: 0px;
+                --tw-ring-offset-color: #fff;
+                --tw-ring-color: rgba(59, 130, 246, 0.5);
+                --tw-ring-offset-shadow: 0 0 #0000;
+                --tw-ring-shadow: 0 0 #0000;
+                --tw-shadow: 0 0 #0000;
+                --tw-shadow-colored: 0 0 #0000;
+                --tw-blur: ;
+                --tw-brightness: ;
+                --tw-contrast: ;
+                --tw-grayscale: ;
+                --tw-hue-rotate: ;
+                --tw-invert: ;
+                --tw-saturate: ;
+                --tw-sepia: ;
+                --tw-drop-shadow: ;
+                --tw-backdrop-blur: ;
+                --tw-backdrop-brightness: ;
+                --tw-backdrop-contrast: ;
+                --tw-backdrop-grayscale: ;
+                --tw-backdrop-hue-rotate: ;
+                --tw-backdrop-invert: ;
+                --tw-backdrop-opacity: ;
+                --tw-backdrop-saturate: ;
+                --tw-backdrop-sepia: ;
+                --tw-contain-size: ;
+                --tw-contain-layout: ;
+                --tw-contain-paint: ;
+                --tw-contain-style: ;
+            }
+            #webcrumbs .absolute {
+                position: absolute;
+            }
+            #webcrumbs .relative {
+                position: relative;
+            }
+            #webcrumbs .right-0 {
+                right: 0;
+            }
+            #webcrumbs .top-0 {
+                top: 0;
+            }
+            #webcrumbs .mb-10 {
+                margin-bottom: 40px;
+            }
+            #webcrumbs .mb-12 {
+                margin-bottom: 48px;
+            }
+            #webcrumbs .mb-2 {
+                margin-bottom: 8px;
+            }
+            #webcrumbs .mb-3 {
+                margin-bottom: 12px;
+            }
+            #webcrumbs .mb-4 {
+                margin-bottom: 16px;
+            }
+            #webcrumbs .mb-6 {
+                margin-bottom: 24px;
+            }
+            #webcrumbs .mb-8 {
+                margin-bottom: 32px;
+            }
+            #webcrumbs .ml-1 {
+                margin-left: 4px;
+            }
+            #webcrumbs .mr-1 {
+                margin-right: 4px;
+            }
+            #webcrumbs .mr-2 {
+                margin-right: 8px;
+            }
+            #webcrumbs .mr-3 {
+                margin-right: 12px;
+            }
+            #webcrumbs .mt-8 {
+                margin-top: 32px;
+            }
+            #webcrumbs .inline-block {
+                display: inline-block;
+            }
+            #webcrumbs .flex {
+                display: flex;
+            }
+            #webcrumbs .grid {
+                display: grid;
+            }
+            #webcrumbs .h-40 {
+                height: 160px;
+            }
+            #webcrumbs .w-\[1280px\] {
+                width: 1280px;
+            }
+            #webcrumbs .max-w-2xl {
+                max-width: 42rem;
+            }
+            #webcrumbs .grid-cols-1 {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+            #webcrumbs .flex-row {
+                flex-direction: row;
+            }
+            #webcrumbs .flex-col {
+                flex-direction: column;
+            }
+            #webcrumbs .flex-wrap {
+                flex-wrap: wrap;
+            }
+            #webcrumbs .items-start {
+                align-items: flex-start;
+            }
+            #webcrumbs .items-center {
+                align-items: center;
+            }
+            #webcrumbs .justify-center {
+                justify-content: center;
+            }
+            #webcrumbs .justify-between {
+                justify-content: space-between;
+            }
+            #webcrumbs .gap-4 {
+                gap: 16px;
+            }
+            #webcrumbs .gap-6 {
+                gap: 24px;
+            }
+            #webcrumbs .gap-8 {
+                gap: 32px;
+            }
+            #webcrumbs :is(.space-x-2 > :not([hidden]) ~ :not([hidden])) {
+                --tw-space-x-reverse: 0;
+                margin-left: calc(8px * (1 - var(--tw-space-x-reverse)));
+                margin-right: calc(8px * var(--tw-space-x-reverse));
+            }
+            #webcrumbs :is(.space-x-3 > :not([hidden]) ~ :not([hidden])) {
+                --tw-space-x-reverse: 0;
+                margin-left: calc(12px * (1 - var(--tw-space-x-reverse)));
+                margin-right: calc(12px * var(--tw-space-x-reverse));
+            }
+            #webcrumbs :is(.space-x-4 > :not([hidden]) ~ :not([hidden])) {
+                --tw-space-x-reverse: 0;
+                margin-left: calc(16px * (1 - var(--tw-space-x-reverse)));
+                margin-right: calc(16px * var(--tw-space-x-reverse));
+            }
+            #webcrumbs :is(.space-y-2 > :not([hidden]) ~ :not([hidden])) {
+                --tw-space-y-reverse: 0;
+                margin-bottom: calc(8px * var(--tw-space-y-reverse));
+                margin-top: calc(8px * (1 - var(--tw-space-y-reverse)));
+            }
+            #webcrumbs .overflow-hidden {
+                overflow: hidden;
+            }
+            #webcrumbs .rounded-full {
+                border-radius: 9999px;
+            }
+            #webcrumbs .rounded-lg {
+                border-radius: 24px;
+            }
+            #webcrumbs .rounded-xl {
+                border-radius: 36px;
+            }
+            #webcrumbs .border {
+                border-width: 1px;
+            }
+            #webcrumbs .border-l-4 {
+                border-left-width: 4px;
+            }
+            #webcrumbs .border-t {
+                border-top-width: 1px;
+            }
+            #webcrumbs .border-blue-500 {
+                --tw-border-opacity: 1;
+                border-color: rgb(59 130 246 / var(--tw-border-opacity));
+            }
+            #webcrumbs .border-gray-200 {
+                --tw-border-opacity: 1;
+                border-color: rgb(229 231 235 / var(--tw-border-opacity));
+            }
+            #webcrumbs .border-primary-300 {
+                --tw-border-opacity: 1;
+                border-color: rgb(183 169 255 / var(--tw-border-opacity));
+            }
+            #webcrumbs .border-red-500 {
+                --tw-border-opacity: 1;
+                border-color: rgb(239 68 68 / var(--tw-border-opacity));
+            }
+            #webcrumbs .border-yellow-500 {
+                --tw-border-opacity: 1;
+                border-color: rgb(234 179 8 / var(--tw-border-opacity));
+            }
+            #webcrumbs .bg-blue-100 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .bg-blue-50 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(239 246 255 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .bg-gray-100 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .bg-primary-100 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(233 229 255 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .bg-primary-500 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(115 65 255 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .bg-primary-600 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(99 27 255 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .bg-primary-700 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(97 27 248 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .bg-red-100 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .bg-white {
+                --tw-bg-opacity: 1;
+                background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .bg-yellow-100 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(254 249 195 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .bg-gradient-to-b {
+                background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+            }
+            #webcrumbs .from-blue-50 {
+                --tw-gradient-from: #eff6ff var(--tw-gradient-from-position);
+                --tw-gradient-to: rgba(239, 246, 255, 0) var(--tw-gradient-to-position);
+                --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+            }
+            #webcrumbs .to-white {
+                --tw-gradient-to: #fff var(--tw-gradient-to-position);
+            }
+            #webcrumbs .object-cover {
+                object-fit: cover;
+            }
+            #webcrumbs .p-2 {
+                padding: 8px;
+            }
+            #webcrumbs .p-4 {
+                padding: 16px;
+            }
+            #webcrumbs .p-5 {
+                padding: 20px;
+            }
+            #webcrumbs .p-6 {
+                padding: 24px;
+            }
+            #webcrumbs .p-8 {
+                padding: 32px;
+            }
+            #webcrumbs .px-3 {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+            #webcrumbs .px-4 {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+            #webcrumbs .px-6 {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+            #webcrumbs .py-1 {
+                padding-bottom: 4px;
+                padding-top: 4px;
+            }
+            #webcrumbs .py-2 {
+                padding-bottom: 8px;
+                padding-top: 8px;
+            }
+            #webcrumbs .py-3 {
+                padding-bottom: 12px;
+                padding-top: 12px;
+            }
+            #webcrumbs .pt-6 {
+                padding-top: 24px;
+            }
+            #webcrumbs .text-center {
+                text-align: center;
+            }
+            #webcrumbs .font-sans {
+                font-family:
+                    Open Sans,
+                    ui-sans-serif,
+                    system-ui,
+                    sans-serif,
+                    Apple Color Emoji,
+                    Segoe UI Emoji,
+                    Segoe UI Symbol,
+                    Noto Color Emoji;
+            }
+            #webcrumbs .text-2xl {
+                font-size: 24px;
+                line-height: 31.200000000000003px;
+            }
+            #webcrumbs .text-3xl {
+                font-size: 30px;
+                line-height: 36px;
+            }
+            #webcrumbs .text-4xl {
+                font-size: 36px;
+                line-height: 41.4px;
+            }
+            #webcrumbs .text-\[280px\] {
+                font-size: 280px;
+            }
+            #webcrumbs .text-lg {
+                font-size: 18px;
+                line-height: 27px;
+            }
+            #webcrumbs .text-sm {
+                font-size: 14px;
+                line-height: 21px;
+            }
+            #webcrumbs .text-xl {
+                font-size: 20px;
+                line-height: 28px;
+            }
+            #webcrumbs .font-bold {
+                font-weight: 700;
+            }
+            #webcrumbs .font-medium {
+                font-weight: 500;
+            }
+            #webcrumbs .font-semibold {
+                font-weight: 600;
+            }
+            #webcrumbs .text-blue-500 {
+                --tw-text-opacity: 1;
+                color: rgb(59 130 246 / var(--tw-text-opacity));
+            }
+            #webcrumbs .text-blue-600 {
+                --tw-text-opacity: 1;
+                color: rgb(37 99 235 / var(--tw-text-opacity));
+            }
+            #webcrumbs .text-blue-700 {
+                --tw-text-opacity: 1;
+                color: rgb(29 78 216 / var(--tw-text-opacity));
+            }
+            #webcrumbs .text-gray-500 {
+                --tw-text-opacity: 1;
+                color: rgb(107 114 128 / var(--tw-text-opacity));
+            }
+            #webcrumbs .text-gray-600 {
+                --tw-text-opacity: 1;
+                color: rgb(75 85 99 / var(--tw-text-opacity));
+            }
+            #webcrumbs .text-gray-800 {
+                --tw-text-opacity: 1;
+                color: rgb(31 41 55 / var(--tw-text-opacity));
+            }
+            #webcrumbs .text-green-500 {
+                --tw-text-opacity: 1;
+                color: rgb(34 197 94 / var(--tw-text-opacity));
+            }
+            #webcrumbs .text-green-600 {
+                --tw-text-opacity: 1;
+                color: rgb(22 163 74 / var(--tw-text-opacity));
+            }
+            #webcrumbs .text-primary-600 {
+                --tw-text-opacity: 1;
+                color: rgb(99 27 255 / var(--tw-text-opacity));
+            }
+            #webcrumbs .text-primary-700 {
+                --tw-text-opacity: 1;
+                color: rgb(97 27 248 / var(--tw-text-opacity));
+            }
+            #webcrumbs .text-primary-800 {
+                --tw-text-opacity: 1;
+                color: rgb(70 7 208 / var(--tw-text-opacity));
+            }
+            #webcrumbs .text-red-500 {
+                --tw-text-opacity: 1;
+                color: rgb(239 68 68 / var(--tw-text-opacity));
+            }
+            #webcrumbs .text-red-600 {
+                --tw-text-opacity: 1;
+                color: rgb(220 38 38 / var(--tw-text-opacity));
+            }
+            #webcrumbs .text-red-700 {
+                --tw-text-opacity: 1;
+                color: rgb(185 28 28 / var(--tw-text-opacity));
+            }
+            #webcrumbs .text-white {
+                --tw-text-opacity: 1;
+                color: rgb(255 255 255 / var(--tw-text-opacity));
+            }
+            #webcrumbs .text-yellow-700 {
+                --tw-text-opacity: 1;
+                color: rgb(161 98 7 / var(--tw-text-opacity));
+            }
+            #webcrumbs .opacity-10 {
+                opacity: 0.1;
+            }
+            #webcrumbs .shadow-lg {
+                --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+                --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+            }
+            #webcrumbs .shadow-lg,
+            #webcrumbs .shadow-md {
+                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            }
+            #webcrumbs .shadow-md {
+                --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+                --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+            }
+            #webcrumbs .shadow-sm {
+                --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+                --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            }
+            #webcrumbs .transition-all {
+                transition-duration: 0.15s;
+                transition-property: all;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            #webcrumbs .transition-colors {
+                transition-duration: 0.15s;
+                transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            #webcrumbs .duration-300 {
+                transition-duration: 0.3s;
+            }
+            #webcrumbs {
+                font-family: Open Sans !important;
+                font-size: 16px !important;
+            }
+            #webcrumbs :is(.bg-primary-100) {
+                color: rgba(0, 0, 0, 0.9) !important;
+            }
+            #webcrumbs :is(.bg-primary-500) {
+                color: hsla(0, 0%, 100%, 0.9) !important;
+            }
+            #webcrumbs :is(.bg-primary-600) {
+                color: hsla(0, 0%, 100%, 0.9) !important;
+            }
+            #webcrumbs :is(.bg-primary-700) {
+                color: hsla(0, 0%, 100%, 0.9) !important;
+            }
+            #webcrumbs .hover\:bg-blue-100:hover {
+                --tw-bg-opacity: 1;
+                background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .hover\:bg-gray-100:hover {
+                --tw-bg-opacity: 1;
+                background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .hover\:bg-gray-200:hover {
+                --tw-bg-opacity: 1;
+                background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .hover\:bg-primary-200:hover {
+                --tw-bg-opacity: 1;
+                background-color: rgb(213 207 255 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .hover\:bg-primary-50:hover {
+                --tw-bg-opacity: 1;
+                background-color: rgb(243 241 255 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .hover\:bg-primary-500:hover {
+                --tw-bg-opacity: 1;
+                background-color: rgb(115 65 255 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .hover\:bg-primary-600:hover {
+                --tw-bg-opacity: 1;
+                background-color: rgb(99 27 255 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .hover\:bg-red-100:hover {
+                --tw-bg-opacity: 1;
+                background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+            }
+            #webcrumbs .hover\:text-blue-400:hover {
+                --tw-text-opacity: 1;
+                color: rgb(96 165 250 / var(--tw-text-opacity));
+            }
+            #webcrumbs .hover\:text-blue-600:hover {
+                --tw-text-opacity: 1;
+                color: rgb(37 99 235 / var(--tw-text-opacity));
+            }
+            #webcrumbs .hover\:text-primary-600:hover {
+                --tw-text-opacity: 1;
+                color: rgb(99 27 255 / var(--tw-text-opacity));
+            }
+            #webcrumbs .hover\:text-primary-700:hover {
+                --tw-text-opacity: 1;
+                color: rgb(97 27 248 / var(--tw-text-opacity));
+            }
+            #webcrumbs .hover\:text-red-600:hover {
+                --tw-text-opacity: 1;
+                color: rgb(220 38 38 / var(--tw-text-opacity));
+            }
+            #webcrumbs .hover\:shadow-lg:hover {
+                --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+                --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+            }
+            #webcrumbs .hover\:shadow-lg:hover,
+            #webcrumbs .hover\:shadow-md:hover {
+                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            }
+            #webcrumbs .hover\:shadow-md:hover {
+                --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+                --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+            }
+            #webcrumbs .hover\:shadow-xl:hover {
+                --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+                --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            }
+            #webcrumbs :is(.group:hover .group-hover\:text-primary-600) {
+                --tw-text-opacity: 1;
+                color: rgb(99 27 255 / var(--tw-text-opacity));
+            }
+            @media (min-width: 768px) {
+                #webcrumbs .md\:mb-0 {
+                    margin-bottom: 0;
+                }
+                #webcrumbs .md\:grid-cols-2 {
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                }
+                #webcrumbs .md\:flex-row {
+                    flex-direction: row;
+                }
+            }
+            @media (min-width: 1024px) {
+                #webcrumbs .lg\:grid-cols-3 {
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                }
+                #webcrumbs .lg\:grid-cols-4 {
+                    grid-template-columns: repeat(4, minmax(0, 1fr));
+                }
+            }
+
+            body {
+                line-height: inherit;
+                padding: 24px;
+                display: flex;
+                flex-direction: column;
+                min-width: 100vw;
+                min-height: 100vh;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(135deg, #ffffff, #d4d4d4);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="webcrumbs">
+            <div data-id="qECg" class="w-[1280px] p-6 bg-gradient-to-b from-blue-50 to-white font-sans">
+                <header
+                    data-id="Nz8B"
+                    class="bg-white rounded-xl shadow-lg p-6 mb-8 transition-all duration-300 hover:shadow-xl"
+                >
+                    <div data-id="0H1j" class="flex flex-col md:flex-row justify-between items-center">
+                        <div data-id="U9ai" class="flex items-center mb-4 md:mb-0">
+                            <span data-id="OwZo" class="material-symbols-outlined text-primary-600 text-4xl mr-3"
+                                >medical_services</span
+                            >
+                            <h1 data-id="0xtm" class="text-3xl font-bold text-primary-800">SCIH Portal</h1>
+                        </div>
+                        <nav data-id="wC2_" class="flex space-x-4">
+                            <button
+                                data-id="W4FM"
+                                class="px-4 py-2 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition-colors duration-300"
+                            >
+                                Início
+                            </button>
+                            <button
+                                data-id="9OtJ"
+                                class="px-4 py-2 rounded-lg bg-white text-primary-700 border border-primary-300 font-medium hover:bg-primary-50 transition-colors duration-300"
+                            >
+                                Boletins
+                            </button>
+                            <button
+                                data-id="HYST"
+                                class="px-4 py-2 rounded-lg bg-white text-primary-700 border border-primary-300 font-medium hover:bg-primary-50 transition-colors duration-300"
+                            >
+                                Alertas
+                            </button>
+                            <button
+                                data-id="iDmY"
+                                class="px-4 py-2 rounded-lg bg-white text-primary-700 border border-primary-300 font-medium hover:bg-primary-50 transition-colors duration-300"
+                            >
+                                Contato
+                            </button>
+                        </nav>
+                    </div>
+                </header>
+                <section data-id="fEqe" class="mb-12">
+                    <div data-id="i7ay" class="bg-primary-700 text-white rounded-xl p-8 relative overflow-hidden">
+                        <div data-id="6K4C" class="absolute top-0 right-0 opacity-10">
+                            <span data-id="xqwv" class="material-symbols-outlined text-[280px]">health_and_safety</span>
+                        </div>
+                        <h2 data-id="MSzU" class="text-4xl font-bold mb-3">
+                            Serviço de Controle de Infecção Hospitalar
+                        </h2>
+                        <p data-id="XgMC" class="text-xl max-w-2xl mb-6">
+                            Mantendo nossa instituição segura através de vigilância contínua, educação e implementação
+                            de práticas baseadas em evidências.
+                        </p>
+                        <div data-id="LUdd" class="flex flex-wrap gap-4">
+                            <button
+                                data-id="ZsRL"
+                                class="px-6 py-3 rounded-lg bg-white text-primary-700 font-semibold hover:bg-gray-100 transition-colors duration-300 flex items-center"
+                            >
+                                <span data-id="4quD" class="material-symbols-outlined mr-2">notifications</span> Últimos
+                                Alertas
+                            </button>
+                            <button
+                                data-id="uacE"
+                                class="px-6 py-3 rounded-lg bg-primary-600 text-white font-semibold hover:bg-primary-500 transition-colors duration-300 flex items-center"
+                            >
+                                <span data-id="FhpI" class="material-symbols-outlined mr-2">description</span> Boletins
+                                SCIH
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section data-id="2WVp" class="mb-12">
+                    <div data-id="00Ll" class="flex justify-between items-center mb-6">
+                        <h2 data-id="oFf2" class="text-2xl font-bold text-gray-800">Alertas Recentes</h2>
+                        <button
+                            data-id="T2nU"
+                            class="px-4 py-2 rounded-lg text-primary-600 hover:bg-primary-50 transition-colors duration-300 flex items-center"
+                        >
+                            Ver todos
+                            <span data-id="GWVp" class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+                        </button>
+                    </div>
+                    <div data-id="C_b3" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div
+                            data-id="rkqS"
+                            class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all duration-300 border-l-4 border-red-500 group"
+                        >
+                            <div data-id="mE9H" class="flex justify-between items-start mb-3">
+                                <span
+                                    data-id="n2jC"
+                                    class="inline-block px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium"
+                                    >Urgente</span
+                                >
+                                <span data-id="GQyb" class="text-gray-500 text-sm">22/04/2023</span>
+                            </div>
+                            <h3
+                                data-id="IoCI"
+                                class="text-xl font-semibold mb-2 group-hover:text-primary-600 transition-colors"
+                            >
+                                Surto de Infecção por KPC
+                            </h3>
+                            <p data-id="WrCI" class="text-gray-600 mb-4">
+                                Identificamos um aumento nos casos de infecção por Klebsiella pneumoniae carbapenemase
+                                (KPC) no setor de UTI adulto.
+                            </p>
+                            <button
+                                data-id="1W1f"
+                                class="text-primary-600 font-medium flex items-center hover:text-primary-700 transition-colors"
+                            >
+                                Ler mais
+                                <span data-id="lSDa" class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+                            </button>
+                        </div>
+                        <div
+                            data-id="_NKO"
+                            class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all duration-300 border-l-4 border-yellow-500 group"
+                        >
+                            <div data-id="zahO" class="flex justify-between items-start mb-3">
+                                <span
+                                    data-id="jJ5Y"
+                                    class="inline-block px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium"
+                                    >Atenção</span
+                                >
+                                <span data-id="DP33" class="text-gray-500 text-sm">15/04/2023</span>
+                            </div>
+                            <h3
+                                data-id="cf9j"
+                                class="text-xl font-semibold mb-2 group-hover:text-primary-600 transition-colors"
+                            >
+                                Precauções para Covid-19
+                            </h3>
+                            <p data-id="SJPA" class="text-gray-600 mb-4">
+                                Atualização dos protocolos de atendimento para pacientes com suspeita ou diagnóstico de
+                                Covid-19.
+                            </p>
+                            <button
+                                data-id="NspI"
+                                class="text-primary-600 font-medium flex items-center hover:text-primary-700 transition-colors"
+                            >
+                                Ler mais
+                                <span data-id="gCsP" class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+                            </button>
+                        </div>
+                        <div
+                            data-id="PW2u"
+                            class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all duration-300 border-l-4 border-blue-500 group"
+                        >
+                            <div data-id="dVkU" class="flex justify-between items-start mb-3">
+                                <span
+                                    data-id="nBzy"
+                                    class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium"
+                                    >Informativo</span
+                                >
+                                <span data-id="A7-1" class="text-gray-500 text-sm">08/04/2023</span>
+                            </div>
+                            <h3
+                                data-id="7c9A"
+                                class="text-xl font-semibold mb-2 group-hover:text-primary-600 transition-colors"
+                            >
+                                Campanha de Higiene das Mãos
+                            </h3>
+                            <p data-id="6R8j" class="text-gray-600 mb-4">
+                                Nova campanha institucional para reforçar os cinco momentos de higiene das mãos.
+                                Participe das atividades.
+                            </p>
+                            <button
+                                data-id="_nzz"
+                                class="text-primary-600 font-medium flex items-center hover:text-primary-700 transition-colors"
+                            >
+                                Ler mais
+                                <span data-id="-KJh" class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section data-id="-5IF" class="mb-12">
+                    <div data-id="f633" class="flex justify-between items-center mb-6">
+                        <h2 data-id="xHpu" class="text-2xl font-bold text-gray-800">Boletins SCIH</h2>
+                        <div data-id="2ucW" class="flex space-x-2">
+                            <button
+                                data-id="R0_6"
+                                class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300"
+                            >
+                                <span data-id="SrJg" class="material-symbols-outlined">filter_list</span>
+                            </button>
+                            <button
+                                data-id="mW8Q"
+                                class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300"
+                            >
+                                <span data-id="RxFY" class="material-symbols-outlined">search</span>
+                            </button>
+                            <button
+                                data-id="Imlh"
+                                class="px-4 py-2 rounded-lg bg-primary-500 text-white flex items-center hover:bg-primary-600 transition-colors duration-300"
+                            >
+                                <span data-id="IS_f" class="material-symbols-outlined mr-1">upload_file</span> Publicar
+                            </button>
+                        </div>
+                    </div>
+                    <div data-id="VWsm" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div
+                            data-id="PF7g"
+                            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 group"
+                        >
+                            <div data-id="faQa" class="bg-gray-100 p-4 flex justify-center items-center">
+                                <img
+                                    data-id="CB3e"
+                                    src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzkyNDZ8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwcmVwb3J0fGVufDB8fHx8MTc0NzE4NDQxN3ww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+                                    alt="Boletim PDF preview"
+                                    keywords="medical report, hospital infection, pdf document"
+                                    class="h-40 object-cover"
+                                />
+                            </div>
+                            <div data-id="hMAC" class="p-5">
+                                <h3
+                                    data-id="xOLX"
+                                    class="text-xl font-semibold mb-2 group-hover:text-primary-600 transition-colors"
+                                >
+                                    Boletim Epidemiológico SCIH - Abril 2023
+                                </h3>
+                                <p data-id="Xyh4" class="text-gray-600 mb-4 text-sm">
+                                    Relatório mensal com dados de vigilância epidemiológica das infecções relacionadas à
+                                    assistência à saúde.
+                                </p>
+                                <div data-id="8c6h" class="flex justify-between items-center">
+                                    <span data-id="pHaD" class="text-gray-500 text-sm">30/04/2023</span>
+                                    <button
+                                        data-id="gg9I"
+                                        class="p-2 rounded-full bg-primary-100 text-primary-600 hover:bg-primary-200 transition-colors duration-300"
+                                    >
+                                        <span data-id="ALUB" class="material-symbols-outlined">download</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            data-id="yHD_"
+                            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 group"
+                        >
+                            <div data-id="pCoj" class="bg-gray-100 p-4 flex justify-center items-center">
+                                <img
+                                    data-id="sX-w"
+                                    src="https://images.unsplash.com/photo-1599045118108-bf9954418b76?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzkyNDZ8MHwxfHNlYXJjaHwyfHxtZWRpY2FsJTIwcmVwb3J0fGVufDB8fHx8MTc0NzE4NDQxN3ww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+                                    alt="Boletim PDF preview"
+                                    keywords="medical report, hospital infection, pdf document"
+                                    class="h-40 object-cover"
+                                />
+                            </div>
+                            <div data-id="-fMX" class="p-5">
+                                <h3
+                                    data-id="N89y"
+                                    class="text-xl font-semibold mb-2 group-hover:text-primary-600 transition-colors"
+                                >
+                                    Boletim Epidemiológico SCIH - Março 2023
+                                </h3>
+                                <p data-id="R0Er" class="text-gray-600 mb-4 text-sm">
+                                    Relatório mensal com dados de vigilância epidemiológica das infecções relacionadas à
+                                    assistência à saúde.
+                                </p>
+                                <div data-id="I8B8" class="flex justify-between items-center">
+                                    <span data-id="wTC4" class="text-gray-500 text-sm">31/03/2023</span>
+                                    <button
+                                        data-id="e2vW"
+                                        class="p-2 rounded-full bg-primary-100 text-primary-600 hover:bg-primary-200 transition-colors duration-300"
+                                    >
+                                        <span data-id="GFA_" class="material-symbols-outlined">download</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            data-id="QwjL"
+                            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 group"
+                        >
+                            <div data-id="-z6t" class="bg-gray-100 p-4 flex justify-center items-center">
+                                <img
+                                    data-id="8MDB"
+                                    src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzkyNDZ8MHwxfHNlYXJjaHwzfHxtZWRpY2FsJTIwcmVwb3J0fGVufDB8fHx8MTc0NzE4NDQxN3ww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+                                    alt="Boletim PDF preview"
+                                    keywords="medical report, hospital infection, pdf document"
+                                    class="h-40 object-cover"
+                                />
+                            </div>
+                            <div data-id="42-W" class="p-5">
+                                <h3
+                                    data-id="96gA"
+                                    class="text-xl font-semibold mb-2 group-hover:text-primary-600 transition-colors"
+                                >
+                                    Boletim Epidemiológico SCIH - Fevereiro 2023
+                                </h3>
+                                <p data-id="3TWa" class="text-gray-600 mb-4 text-sm">
+                                    Relatório mensal com dados de vigilância epidemiológica das infecções relacionadas à
+                                    assistência à saúde.
+                                </p>
+                                <div data-id="4QFs" class="flex justify-between items-center">
+                                    <span data-id="6-I6" class="text-gray-500 text-sm">28/02/2023</span>
+                                    <button
+                                        data-id="HX5L"
+                                        class="p-2 rounded-full bg-primary-100 text-primary-600 hover:bg-primary-200 transition-colors duration-300"
+                                    >
+                                        <span data-id="oCOg" class="material-symbols-outlined">download</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section data-id="1fMk" class="mb-10">
+                    <div data-id="Yimt" class="bg-blue-50 rounded-xl p-8">
+                        <h2 data-id="9Fpq" class="text-2xl font-bold text-gray-800 mb-6">
+                            Estatísticas de Infecção Hospitalar
+                        </h2>
+                        <div data-id="y4hS" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                            <div
+                                data-id="YD-I"
+                                class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300"
+                            >
+                                <div data-id="Ca6J" class="flex items-center mb-2">
+                                    <span data-id="WzIl" class="material-symbols-outlined text-green-500 mr-2"
+                                        >trending_down</span
+                                    >
+                                    <h3 data-id="J4gk" class="font-semibold">Taxa de IRAS</h3>
+                                </div>
+                                <p data-id="vuiq" class="text-3xl font-bold text-gray-800">4.2%</p>
+                                <p data-id="q6A9" class="text-green-600 text-sm flex items-center">
+                                    <span data-id="yVtH" class="material-symbols-outlined text-sm mr-1"
+                                        >arrow_downward</span
+                                    >
+                                    0.8% em relação ao mês anterior
+                                </p>
+                            </div>
+                            <div
+                                data-id="8bvQ"
+                                class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300"
+                            >
+                                <div data-id="vGS2" class="flex items-center mb-2">
+                                    <span data-id="f1w-" class="material-symbols-outlined text-red-500 mr-2"
+                                        >trending_up</span
+                                    >
+                                    <h3 data-id="EWDg" class="font-semibold">Taxa de ITU-RC</h3>
+                                </div>
+                                <p data-id="ffzA" class="text-3xl font-bold text-gray-800">3.1%</p>
+                                <p data-id="FbBm" class="text-red-600 text-sm flex items-center">
+                                    <span data-id="NC7O" class="material-symbols-outlined text-sm mr-1"
+                                        >arrow_upward</span
+                                    >
+                                    0.4% em relação ao mês anterior
+                                </p>
+                            </div>
+                            <div
+                                data-id="uvO5"
+                                class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300"
+                            >
+                                <div data-id="kWoA" class="flex items-center mb-2">
+                                    <span data-id="FWnB" class="material-symbols-outlined text-green-500 mr-2"
+                                        >trending_down</span
+                                    >
+                                    <h3 data-id="cRr-" class="font-semibold">Taxa de PAV</h3>
+                                </div>
+                                <p data-id="Z-XN" class="text-3xl font-bold text-gray-800">2.7%</p>
+                                <p data-id="h-bK" class="text-green-600 text-sm flex items-center">
+                                    <span data-id="_8wk" class="material-symbols-outlined text-sm mr-1"
+                                        >arrow_downward</span
+                                    >
+                                    1.2% em relação ao mês anterior
+                                </p>
+                            </div>
+                            <div
+                                data-id="ioyk"
+                                class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300"
+                            >
+                                <div data-id="MULy" class="flex items-center mb-2">
+                                    <span data-id="SQPc" class="material-symbols-outlined text-blue-500 mr-2"
+                                        >trending_flat</span
+                                    >
+                                    <h3 data-id="IomI" class="font-semibold">Taxa de ISC</h3>
+                                </div>
+                                <p data-id="DVUk" class="text-3xl font-bold text-gray-800">1.9%</p>
+                                <p data-id="w5Bf" class="text-blue-600 text-sm flex items-center">
+                                    <span data-id="hwmF" class="material-symbols-outlined text-sm mr-1">remove</span>
+                                    Sem alteração
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer data-id="rCCd" class="bg-white rounded-xl shadow-lg p-6">
+                    <div data-id="f6Hq" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div data-id="49o5">
+                            <h3 data-id="mPF9" class="text-lg font-bold mb-4">SCIH Portal</h3>
+                            <p data-id="bT6Z" class="text-gray-600 mb-4">
+                                Serviço dedicado à prevenção e controle de infecções relacionadas à assistência à saúde.
+                            </p>
+                            <div data-id="f9rz" class="flex space-x-3">
+                                <button
+                                    data-id="7wv7"
+                                    class="p-2 rounded-full bg-gray-100 hover:bg-blue-100 hover:text-blue-600 transition-colors duration-300"
+                                >
+                                    <i data-id="Nfs_" class="fa-brands fa-facebook"></i>
+                                </button>
+                                <button
+                                    data-id="63aI"
+                                    class="p-2 rounded-full bg-gray-100 hover:bg-blue-100 hover:text-blue-400 transition-colors duration-300"
+                                >
+                                    <i data-id="hEZ7" class="fa-brands fa-twitter"></i>
+                                </button>
+                                <button
+                                    data-id="A7wS"
+                                    class="p-2 rounded-full bg-gray-100 hover:bg-red-100 hover:text-red-600 transition-colors duration-300"
+                                >
+                                    <i data-id="lJtK" class="fa-brands fa-youtube"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div data-id="TMmb">
+                            <h3 data-id="NWiF" class="text-lg font-bold mb-4">Links Rápidos</h3>
+                            <ul data-id="lNx3" class="space-y-2">
+                                <li data-id="eKDw">
+                                    <a
+                                        data-id="tDZy"
+                                        href="#"
+                                        class="text-gray-600 hover:text-primary-600 transition-colors"
+                                        >Página Inicial</a
+                                    >
+                                </li>
+                                <li data-id="973z">
+                                    <a
+                                        data-id="lTOz"
+                                        href="#"
+                                        class="text-gray-600 hover:text-primary-600 transition-colors"
+                                        >Boletins</a
+                                    >
+                                </li>
+                                <li data-id="ECFL">
+                                    <a
+                                        data-id="nzbJ"
+                                        href="#"
+                                        class="text-gray-600 hover:text-primary-600 transition-colors"
+                                        >Alertas</a
+                                    >
+                                </li>
+                                <li data-id="GVQY">
+                                    <a
+                                        data-id="mu2e"
+                                        href="#"
+                                        class="text-gray-600 hover:text-primary-600 transition-colors"
+                                        >Protocolos</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div data-id="PUw3">
+                            <h3 data-id="-P92" class="text-lg font-bold mb-4">Recursos</h3>
+                            <ul data-id="12mj" class="space-y-2">
+                                <li data-id="ItQK">
+                                    <a
+                                        data-id="U_NE"
+                                        href="#"
+                                        class="text-gray-600 hover:text-primary-600 transition-colors"
+                                        >Manuais e Guias</a
+                                    >
+                                </li>
+                                <li data-id="9Quo">
+                                    <a
+                                        data-id="oz0h"
+                                        href="#"
+                                        class="text-gray-600 hover:text-primary-600 transition-colors"
+                                        >Treinamentos</a
+                                    >
+                                </li>
+                                <li data-id="oBW4">
+                                    <a
+                                        data-id="Ilma"
+                                        href="#"
+                                        class="text-gray-600 hover:text-primary-600 transition-colors"
+                                        >FAQ</a
+                                    >
+                                </li>
+                                <li data-id="OxPj">
+                                    <a
+                                        data-id="jJ3P"
+                                        href="#"
+                                        class="text-gray-600 hover:text-primary-600 transition-colors"
+                                        >Biblioteca</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div data-id="RHGy">
+                            <h3 data-id="i2Pz" class="text-lg font-bold mb-4">Contato</h3>
+                            <ul data-id="1asz" class="space-y-2">
+                                <li data-id="Pcva" class="flex items-center text-gray-600">
+                                    <span data-id="YFhA" class="material-symbols-outlined mr-2">call</span> (11)
+                                    5555-1234
+                                </li>
+                                <li data-id="LRFq" class="flex items-center text-gray-600">
+                                    <span data-id="ZEpZ" class="material-symbols-outlined mr-2">mail</span>
+                                    scih@hospital.org
+                                </li>
+                                <li data-id="4AfK" class="flex items-center text-gray-600">
+                                    <span data-id="47uK" class="material-symbols-outlined mr-2">location_on</span> 2º
+                                    andar, Bloco A
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div data-id="9gHJ" class="mt-8 pt-6 border-t border-gray-200 text-center text-gray-500 text-sm">
+                        © 2023 SCIH Portal. Todos os direitos reservados.
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
 
         <div data-id="qECg" class="w-[1280px] p-6 bg-gradient-to-b from-blue-50 to-white font-sans">
             
